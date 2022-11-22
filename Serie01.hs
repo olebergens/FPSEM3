@@ -8,23 +8,19 @@ import Data.List (sort)
 -- Aufgabe 1
 fourEqual :: Integer -> Integer -> Integer -> Integer -> Bool
 fourEqual a b c d = a == b && b == c && c == d
-
 -- Aufgabe 2
 orderTriple :: Ord a => (a, a, a) -> (a, a, a)
 orderTriple (x, y, z) = 
-	let [a, b , c] = sort [x, y, z]
-	in (a, b, c)
-
+ let [a, b , c] = sort [x, y, z] in (a, b, c)
 -- Aufgabe 3
 fib :: Integer -> Integer
 fib 0 = 0
 fib 1 = 1
 fib n = fib(n-1) + fib(n-2)
-
 -- Aufgabe 4
+isElem :: Integer -> [Integer] -> Bool
 isElem _ [] = False
 isElem x (y : ys) = (x == y) || isElem x ys
-
 -- Aufgabe 5
 luhnDouble :: Integer -> Integer
 luhnDouble x = if (2 * x) > 9 then (2 * x) - 9 else 2 * x
