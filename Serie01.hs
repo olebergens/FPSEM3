@@ -3,6 +3,7 @@ import Data.List (sort)
 -- Ole Bergens, 221200097
 -- Blazej Schott, 221200610
 -- Antonin Gräser, 221201792
+-- Ivo Hansen, 221200192
 
 -- Aufgabe 1
 fourEqual :: Integer -> Integer -> Integer -> Integer -> Bool
